@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img#background-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+img#barra-fitness {
+    position: fixed;
+    height: 60%;
+    width: 40%;
+    left: 1000px;
+    top: 50px;
+    z-index: 1; 
+}
+
+div#botao-acesso-entrar{
+    position: absolute;
+    background-color: #b853ee;
+    padding: 1px 20px;
+    cursor: pointer;
+    left: 1350px;
+    top: 450px;
+    z-index: 2; 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+div#botao-acesso-cadastre-se{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 1px 20px;
+    cursor: pointer;
+    left: 1310px;
+    top: 520px;
+    z-index: 2; 
+    color: white;
+    font-size: 20px;
+}
