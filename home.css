@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Playpen+Sans+Arabic:wght@100..800&family=Poetsen+One&family=Special+Gothic+Expanded+One&family=WDXL+Lubrifont+TC&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -16,34 +18,109 @@ img#background-home {
 }
 
 img#barra-fitness {
-    position: fixed;
+    position: absolute;
     height: 60%;
     width: 40%;
     left: 1000px;
     top: 50px;
+    object-fit: contain;
+    object-position: center;
     z-index: 1; 
+    
 }
 
-div#botao-acesso-entrar{
-    position: absolute;
+button#entrar1{
+    position: fixed;
     background-color: #b853ee;
-    padding: 1px 20px;
+    border: 0;
+    padding: 10px 50px;
     cursor: pointer;
     left: 1350px;
     top: 450px;
     z-index: 2; 
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-div#botao-acesso-cadastre-se{
-    position: absolute;
+button#cadastre-se1{
+    position: fixed;
     background-color: transparent;
     border: 2px solid #ffffff;
-    padding: 1px 20px;
+    padding: 6px 16px;
     cursor: pointer;
-    left: 1310px;
-    top: 520px;
+    left: 1350px;
+    top: 510px;
     z-index: 2; 
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button#entrar1:hover{
+    transform: scale(1.1);
+}
+button#cadastre-se1:hover{
+    transform: scale(1.1);
+}
+div#barra-flutuante{
+    background-color: #b853ee;
+    padding: 10px 16px;
+    opacity: 0.5;
+}
+
+
+
+@media(max-width: 450px){
+    img#background-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+img#barra-fitness {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 5px;
+    top: -100px;
+    object-fit: contain;
+    object-position: center;
+    z-index: 1;    
+}
+button#entrar1{
+    position: fixed;
+    background-color: #b853ee;
+    border: 0;
+    padding: 10px 50px;
+    cursor: pointer;
+    left: 115px;
+    top: 430px;
+    z-index: 2; 
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button#cadastre-se1{
+    position: fixed;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 6px 16px;
+    cursor: pointer;
+    left: 115px;
+    top: 500px;
+    z-index: 2; 
+    color: white;
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 }

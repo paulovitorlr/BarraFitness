@@ -1,121 +1,106 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Playpen+Sans+Arabic:wght@100..800&family=Poetsen+One&family=Special+Gothic+Expanded+One&family=WDXL+Lubrifont+TC&display=swap');
+
+body{
+  background-color: #b853ee;
 }
 
-body {
-  height: 100vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+img#imagem-fundo-login {
+    position: fixed;
+    top: 60px;
+    left: 100px;
+    width: 90%;
+    height: 90%;
+    margin-right: 0;
+    margin-left: 0;
+    object-fit:contain; 
+    z-index: -1; 
 }
 
-.login-container {
+div#bloco-branco{
+  position: absolute;
+  object-fit:cover; 
   background-color: #fff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 400px;
+  padding: 200px 1px;
+  width: 25%;
+  left: 300px;
+  top: 250px;
+  
 }
 
-.login-container h2 {
-  margin-bottom: 25px;
-  color: #2c5364;
-  text-align: center;
+div#textos1 h1{
+  position: fixed;
+  left: 390px;
+  top: 250px;
+  color: #fff;
+  background-color: #b853ee;
+  padding: 3px 90px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+#email {
+    position: fixed;
+    left: 420px;
+    top: 380px;
+    width: 10%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid #b853ee; 
+    border-radius: 5px; 
+    background-color: transparent;
+    color: #333;
+    outline: none; 
+    transition: all 0.3s ease; 
 }
 
-form label {
-  display: block;
-  margin-top: 15px;
-  color: #333;
-}
 
-form input {
-  width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-  transition: 0.3s;
+#email:focus {
+    border-color: #45a049; 
+    background-color: #f0f8f0; 
 }
-
-form input:focus {
-  border-color: #2c5364;
-  outline: none;
+form#emaill p{
+  position: fixed;
+  left: 400px;
+  top: 340px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-button {
-  width: 100%;
-  margin-top: 25px;
-  padding: 12px;
-  background-color: #2c5364;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+form#senhha p{
+  position: fixed;
+  left: 400px;
+  top: 420px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-button:hover {
-  background-color: #1b2f3c;
+#senha {
+    position: fixed;
+    left: 420px;
+    top: 460px;
+    width: 10%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid #b853ee; 
+    border-radius: 5px; 
+    background-color: transparent;
+    color: #333;
+    outline: none; 
+    transition: all 0.3s ease; 
 }
-
-.register {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.register a {
-  color: #2c5364;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.register a:hover {
-  text-decoration: underline;
-}
-.social-login {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.social-login p {
-  margin-bottom: 15px;
-  color: #555;
-}
-.google-btn,
-.facebook-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 10px;
-}
-
-.google-btn {
-  background-color: #cc9797;
-  border: 1px solid #ccc;
-}
-
-.facebook-btn {
-  background-color: #1877f2;
-  color: white;
-}
-
-.google-btn img,
-.facebook-btn img {
-  width: 20px;
-  height: 20px;
+button#botao-entrar-login{
+  position: fixed;
+    background-color: transparent;
+    border: 2px solid #000000;
+    padding: 6px 40px;
+    cursor: pointer;
+    left: 430px;
+    top: 540px;
+    z-index: 2; 
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
